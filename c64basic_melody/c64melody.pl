@@ -8,7 +8,7 @@ use strict;
     c64melody.pl 1.0 - Prints C64 BASIC code to produce a humble one voice melody. 
                        Calculates frequencies for musical notes on C64's SID chip (PAL model).
 
-                       Use the additional "create_d64" script to convert the output
+                       Use the additional bash script "create_d64.sh" to convert the output
                        to a ".d64"-file to be used in the emulator "Vice".
 
     Copyright (C) 2024 H. Lubenow
