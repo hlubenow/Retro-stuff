@@ -21,5 +21,5 @@ prgname="$name.prg"
 petcat -w2 -o "$basfile" -- "$txtfile"
 c1541 -format diskname,id d64 "$diskfile" -attach "$diskfile" -write "$basfile" "$prgname"
 
-# Automatically start the emulator. Use "#" at the beginning of the line, if you don't want that:
-x64sc -default -VICIIfull -joydev1 "4" -joydev2 "4" "$diskfile"
+# Automatically start the emulator. Delete the "#" at the beginning of the line, to activate:
+# x64sc -default -VICIIfull -joydev1 "4" -joydev2 "4" "$diskfile"
