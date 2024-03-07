@@ -149,8 +149,6 @@ for $i (@melody) {
 
 for $i (@b) {
     $i2 = $i;
-    $gotodest = getGotoDestination(@b, getGotoLabel($i2));
-    $gotodest = getGotoDestination(@b, getGotoLabel($i2));
     if ($i2 =~ /goto/) {
         $gotolabel = getGotoLabel($i2);
         $gotodest = getGotoDestination(@b, $gotolabel);
