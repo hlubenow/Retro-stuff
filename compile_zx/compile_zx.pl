@@ -62,12 +62,15 @@ print "\n";
 
 print "\n";
 
-my $e = "z80asm -b \"$fname\"";
-system($e);
 my $binfile = "$fpref.bin";
+# my $e = "z80asm -b \"$fname\"";
+my $e = "z80masm \"$fname\" \"$binfile\"";
+print "$e\n";
+system($e);
 if (-e $binfile) {
     print "'$binfile' was created.\n";
     $e = "bin2tap -b -cb 7 -cp 7 -ci 0 \"$binfile\"";
+    print "$e\n";
     system($e);
 } else {
     print "\nError: Compilation of '$fname' failed.\n\n";
